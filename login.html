@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Login Form</title>
+    <style>
+        /* Style for the body to include background image */
+        body {
+            margin: 0;
+            padding: 0;
+            font-family: Arial, sans-serif;
+            background-image: url('background.jpg'); /* Replace 'background.jpg' with your image file */
+            background-size: cover;
+            background-position: center;
+            background-attachment: fixed;
+            color: white; /* Ensures text is readable on darker backgrounds */
+        }
+
+        /* Center the login form */
+        .login-container {
+            width: 300px;
+            margin: 100px auto;
+            background-color: rgba(0, 0, 0, 0.6); /* Adds transparency to the form background */
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.5);
+        }
+
+        /* Style for input fields and button */
+        input[type="text"], input[type="password"] {
+            width: 100%;
+            padding: 10px;
+            margin: 10px 0;
+            border: none;
+            border-radius: 5px;
+        }
+
+        button {
+            width: 100%;
+            padding: 10px;
+            margin-top: 10px;
+            border: none;
+            border-radius: 5px;
+            background-color: #4CAF50;
+            color: white;
+            cursor: pointer;
+            font-size: 16px;
+        }
+
+        button:hover {
+            background-color: #45a049;
+        }
+
+        /* Link styling */
+        a {
+            color: #00bcd4;
+            text-decoration: none;
+        }
+
+        a:hover {
+            text-decoration: underline;
+        }
+    </style>
+</head>
+<body>
+    <div class="login-container">
+        <h2>Login Page</h2>
+        <form action="/login" method="post">
+            <label for="username">Username:</label><br>
+            <input type="text" id="username" name="username" placeholder="Enter your email" required><br>
+            
+            <label for="password">Password:</label><br>
+            <input type="password" id="password" name="password" placeholder="Enter your password" required><br>
+            
+            <button type="submit">Login</button>
+        </form>
+        <br>
+        <a href="/forgot-password">Forgotten password?</a><br>
+        <a href="/create-account">Create new account</a>
+    </div>
+</body>
+</html>
